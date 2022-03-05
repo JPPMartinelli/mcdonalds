@@ -1,0 +1,553 @@
+@charset "utf-8";
+
+:root {
+    --fonte-padrao: "Speedee", arial, helvetica, sans-serif;
+    --cor-fonte: #292929;
+    --cor-sombra: #0a0a0a;
+    --sombra: 0px 0px 3px var(--cor-sombra);
+    --amarelo-mequi: #ffbc0d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* ------------HEADER------------------ */
+
+header { 
+    height: 120px;
+    margin-top: 7px;
+}
+
+#container-header {
+    margin: 0 10%; 
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#container-mcdonalds-logo {
+    height: 100%;
+    width: 9%;
+    display: flex;
+    align-items: center;
+}
+
+img#mcdonalds-logo {
+    height: 70%;
+    width: auto;
+}
+
+#right-division-header {
+    height: 100%;
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+}
+
+#top-division-header {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#top-ul-header {
+    color: #606060;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#top-ul-header li {
+    margin: 0 10px;
+    font-family: var(--fonte-padrao);
+    font-size: 0.9rem;
+}
+
+#buttons-top-division {
+    height: 100%;
+    width: 30%;
+    display: flex;
+}
+
+#compre-sem-fila {
+    width: 118px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-padrao);
+}
+
+.peca-em-casa {
+  background-color: #ffbc0d;
+  width: 118px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--fonte-padrao);
+  border-radius: 5%;
+  margin-left: 5px;
+}
+
+.p-button {
+    font-size: 0.9rem;
+    color: var(--cor-fonte);
+}
+
+#top-ul-header li a {
+    color: #606060;
+}
+
+#bottom-division-header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#bottom-division-header ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#bottom-division-header ul li{
+    list-style-type: none;
+    margin: 0 1%;
+}
+
+#bottom-division-header ul li a {
+    color: #070707;
+    font-family: var(--fonte-padrao);
+    letter-spacing: 1px;
+    padding-bottom: 19px;
+    transition-duration: 0.5s;
+}
+
+#bottom-division-header ul li a:hover {
+    border-bottom: 3px solid var(--amarelo-mequi);
+    
+}
+
+/* --------------------MAIN----------------------------- */
+/* -------------------SLIDES--------------------------- */
+
+#slide-section {
+    height: 700px;
+    background-color: red;
+    background-image: url(imagens/251_19_2_home_destaque_1440x650_3442ffe469.png);
+}
+
+#slide-content {
+    width: 40%;
+    position: absolute;
+    top: 44%;
+    left: 9%;
+}
+
+#slide-content h1 {
+    font-size: 3.0rem;
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-weight: 900;
+}
+
+#slide-content p {
+    color: white;
+    font-size: 1.0rem;
+    font-family: var(--fonte-padrao);
+}
+
+#slide-content #partiu {
+    background-color: #ffbc0d;
+    color: var(--cor-fonte);
+    height: 50px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-padrao);
+    border-radius: 5%;
+}
+
+/* ---------UTILIDADES--------- */
+
+#utilidades {
+    height: 1700px;
+    margin: 5% 9%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    column-gap: 4%;
+}
+
+.topico-utilidade {
+    width: 93%;
+    height: 82%;
+    background-color: white;
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow:  var(--sombra);
+}
+
+.utilidade-content {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    top: 245px;
+}
+
+.utilidade-content h2 {
+    font-family: var(--fonte-padrao);
+    color: var(--cor-fonte);
+    text-align: center;
+}
+.utilidade-content p {
+    font-family: var(--fonte-padrao);
+    color: var(--cor-fonte);
+    text-align: center;
+    width: 80%;
+}
+
+.utilidade-content span {
+    background-color: #ffbc0d;
+    color: var(--cor-fonte);
+    height: 50px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    border-radius: 5%; 
+}
+
+/* -------UTILIDASDES-2------- */
+
+#utilidades-2 {
+    width: 82%;
+    margin: -9% 9%;
+    height: 480px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topico-utilidade-2 {
+    width: 30%;
+    height: 95%;
+    box-shadow: var(--sombra);
+    background-color: white;
+    border-radius: 1%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.utilidade-2-content {
+    height: 64%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.utilidade-2-content h2 {
+    font-family: var(--fonte-padrao);
+    font-weight: 700;
+    color: var(--cor-fonte);
+    width: 75%;
+    text-align: center;
+}
+.utilidade-2-content p {
+    font-family: var(--fonte-padrao);
+    color: var(--cor-fonte);
+    width: 75%;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.utilidade-2-content span {
+    background-color: #ffbc0d;
+    color: var(--cor-fonte);
+    height: 50px;
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    border-radius: 5%; 
+}
+
+/* ------FOOTER----- */
+/* ---HEADER-FOOTER------- */
+
+footer {
+    height: 780px;
+    margin-top: 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-header {
+    height: 170px;
+    background-color: var(--amarelo-mequi);
+    display: flex;
+    align-items: center;
+    padding: 0% 10%;
+}
+
+#container-logo-footer {
+    height: 80%;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+#container-logo-footer img {
+    height: 90%;
+}
+
+#center-division-footer-header {
+    width: 48%;
+    height: 68%;
+    padding: 1% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#center-division-footer-header h2 {
+    font-family: var(--fonte-padrao);
+    color: var(--cor-fonte);
+    font-weight: 800;
+    font-size: 2.0rem;
+}
+#center-division-footer-header p {
+    font-family: var(--fonte-padrao);
+    color: var(--cor-fonte);
+}
+
+#right-division-footer-header {
+    height: 100%;
+    width: 26%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#right-division-footer-header a {
+    width: 39%;
+}
+
+#baixe-agora-footer {
+    background-color: white;
+    color: var(--cor-fonte);
+    height: 50px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    border-radius: 5%; 
+}
+
+/* ------MAIN-FOOTER------- */
+
+#main-footer {
+    background-color: white;
+    height: 65%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(53, 49, 49);
+}
+
+#links-uteis {
+    height: 80%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#links-uteis a {
+    color: var(--cor-fonte);
+    font-family: var(--fonte-padrao);
+}
+
+#links-uteis h3{
+    font-family: var(--fonte-padrao);
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+#links-uteis li {
+    list-style-type: none;
+    line-height: 2.0rem;
+}
+
+#links-uteis ul {
+    width: 15%;
+}
+
+#links-uteis-2 {
+    height: 20%;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#links-uteis-left-division {
+    width: 30%;
+}
+
+#links-uteis-right-division {
+    display: flex;
+    align-items: center;
+    height: 80%;
+}
+
+.container-app-playstore {
+    height: 58%;
+    margin: 0% 2%;
+}
+
+.container-app-playstore img {
+    height: 80%;
+}
+
+#links-uteis-2 a{
+    color: var(--cor-fonte);
+    margin: 0% 1%;
+}
+
+span.social-icon {
+    margin: 0% 1%;
+    padding: 0.3%;
+}
+
+i {
+    font-size: 1.5rem;
+    color: #070707;
+}
+
+/* ---------FOOTER-FOOTER----- */
+
+#footer-footer {
+    display: flex;
+    justify-content: space-between;
+    height: 13%;
+    width: 90%;
+}
+
+#footer-footer-left-division {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+#footer-footer-left-division a {
+    color: var(--cor-fonte);
+}
+
+#footer-footer-left-division p {
+    font-family: var(--fonte-padrao);
+    color: var(--cor-fonte);
+    margin: 0% 3%;
+}
+
+#footer-footer-right-division {
+    font-family: var(--fonte-padrao);
+    color: var(--cor-fonte);
+}
+
+#container-logo-footer-footer {
+    height: 37%;
+}
+
+#container-logo-footer-footer img {
+    height: 100%;
+}
+
+@media (max-width: 1100px) {
+    header {
+        height: 50px;
+    }
+
+    #container-header {
+        margin: 0%;
+    }
+
+    #top-division-header {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    #buttons-top-division {
+        justify-content: flex-end;
+        margin-right: 3px;
+    }
+
+    #top-ul-header {
+        display: none;
+    }
+
+    #compre-sem-fila {
+        display: none;
+    }
+
+    #bottom-division-header {
+        display: none;
+    }
+
+    #utilidades {
+        margin: 5px;
+    }
+
+}
+
+@media (max-width: 850px) {
+        /* UTILIDADES */
+
+        #utilidades {
+            height: 1700px;
+            margin: 5% 9%;
+            display: grid;
+            grid-template-columns: 90%;
+            grid-template-rows: 16% 16% 16% 16% 16%;
+            column-gap: 4%;
+            margin: 5px;
+        }
+    
+        .topico-utilidade {
+            width: 93%;
+            height: 82%;
+            background-color: white;
+            border-radius: 1%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-repeat: no-repeat;
+            background-size: contain;
+            box-shadow:  var(--sombra);
+        }
+
+        #mequizice {
+            background-image: url(imagens/media-mequizice.png);
+        }
+}
